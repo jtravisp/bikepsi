@@ -7,7 +7,7 @@ function psi() {
     tubeless = document.getElementById('tubeless').value;
     tirewidth = document.getElementById('tirewidth').value;
 
-    var totalweight = riderweight + bikeweight;
+    var totalweight = parseInt(riderweight) + parseInt(bikeweight);
     var baseline = 100;
     var psi = 0;
 
@@ -20,7 +20,7 @@ function psi() {
         } else {
             psi = baseline;
         }
-        if (tubeless == Yes) {
+        if (tubeless == "true") {
             psi -= 10;
         }
     }
@@ -35,10 +35,16 @@ function psi() {
         psi = baseline - 35;
     }
 
-    document.getElementById("psi").innerHTML = "Why no work" + psi;
+    var message = "Your recommened tire PSI is " + psi;
+    document.getElementById("psi").innerHTML = message;
+
+    
+}
+
+    // document.querySelector("#psi").innerHTML = "HELLO";
 
     // psiDiv.innerHTML += `<p> ${psi} </p>`
-}
+
 
 
 /*

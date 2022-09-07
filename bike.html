@@ -7,7 +7,7 @@
         <link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script defer src="app.js" charset="utf-8"></script>
-        <title>CS50 Final Project</title>
+        <title>Austin Bike Ride Planner</title>
         <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2972/2972185.png"/>
 
     </head>
@@ -21,18 +21,7 @@
     <!-- Weather widget credit: weatherwidget.io-->
     <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/?unit=us" data-label_1="Austin" data-label_2="Weather" data-theme="original" >Austin Weather</a>
 
-    <script>
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-    </script>
-
-
-
-
-    <div class="container">
-        <div id="quotes">
-            <!-- quote here-->
-        </div>
-    </div> <br>
+    
 
 <!--
     <div class="container">
@@ -44,7 +33,7 @@
 -->
 
 
-
+    <br>
     <div class="container">
         <h1>Bike Tire PSI Calculator</h1>
         <h5>*Only for 700cc road bike tires</h5> <br>
@@ -75,18 +64,37 @@
                 </select>
             <br>
 
-            <button type="submit" id="submit" onclick="psi()">Get suggested PSI</button>
+            <button type="button" id="submit" onclick="psi()">Get suggested PSI</button>
         </form>
-
-        <output id="psi"></output>
+        
     </div>
+    <br>
+    <br>
 
-    <div class="container" id="psi">
-        PSI recommendation will go here <!-- return PSI here-->
+
+    <div class="container" id="psi" style="font-size: 36px;">
+        <!-- return PSI here-->
     </div>
 
     <script src="psi.js"></script>
     
+    <br>
+    <br>
+    <div class="container">
+        <p>Radom Kanye quote:</p>
+        
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+        
+        <div class="container">
+            <div id="quotes">
+                <!-- quote here-->
+            </div>
+        </div> 
+    </div>
+    <br>
+
 </body>
 
 </html>
