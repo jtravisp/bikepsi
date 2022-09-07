@@ -7,10 +7,11 @@ function psi() {
     tubeless = document.getElementById('tubeless').value;
     tirewidth = document.getElementById('tirewidth').value;
 
-    var totalweight = riderwWeight + bikewWeight;
+    var totalweight = riderweight + bikeweight;
     var baseline = 100;
     var psi = 0;
 
+    // Shorten this code...
     if (tirewidth == 23) {
         if (totalweight < 180) {
             psi = baseline - 5;
@@ -34,7 +35,7 @@ function psi() {
         psi = baseline - 35;
     }
 
-    document.getElementById("psi").innerHTML = "Why no work" + psi
+    document.getElementById("psi").innerHTML = "Why no work" + psi;
 
     // psiDiv.innerHTML += `<p> ${psi} </p>`
 }
