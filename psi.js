@@ -69,7 +69,7 @@ function psi() {
         }
     }
 
-    var message = "Your recommended tire PSI is " + psi;
+    var message = "Your recommended tire PSI is " + psi + ".";
     document.getElementById("psi").innerHTML = message;
 
     
