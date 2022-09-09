@@ -9,28 +9,23 @@
         <script defer src="app.js" charset="utf-8"></script>
         <title>Austin Bike Ride Planner</title>
         <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2972/2972185.png"/>
-
     </head>
 
 <body>
-    <div class="container">
-        <h1>Austin Bike Ride Planner</h1>
-        <p>Make sure you are ready for that weekend ride! What does the weather look like? How much air do you need in your tires? How much nutrition do you need to take along?</p>
-    </div>
+
+        <div class="container">
+            <img src="images/SeekPng.com_bicycle-icon-png_3099373.png" width="200px" class="img-fluid">
+            <div class="row">                        
+                <h1>Austin Bike Ride Planner</h1>                
+                <p>Make sure you are ready for that weekend ride! What does the weather look like? How much air do you need in your tires? How much nutrition do you need to take along?</p>
+            </div>
+        </div>
+
 
     <!-- Weather widget credit: weatherwidget.io-->
     <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/?unit=us" data-label_1="Austin" data-label_2="Weather" data-theme="original" >Austin Weather</a>
 
-    
 
-<!--
-    <div class="container">
-        <button id= "give-cat">Give me a cat</button>
-        <div id="cat-pic">
-                pic here
-        </div>
-    </div> <br>
--->
 
 
     <br>
@@ -63,6 +58,7 @@
                     <option id="no" value="false">No</option>
                 </select>
             <br>
+            <br>
 
             <button type="button" id="submit" onclick="psi()">Get suggested PSI</button>
         </form>
@@ -79,6 +75,39 @@
     <script src="psi.js"></script>
     
     <br>
+
+
+
+
+
+    <div class="container">
+        <h1>Bike Ride Nutrition Calculator</h1>
+        <h5>Carbohydrates are the body’s primary energy source when cycling. If you don't plan your carb intake during longer rides, prepare to "bonk" before you get back home!</h5> <br>
+
+        <form id="psi-form">
+            <h3>Cyclist weight:</h3>
+                <input name="weight" id="weight" type="number" min="80" max="300" default="150" placeholder="Rider lbs">
+            <br>
+            <br>
+
+            <button type="button" id="submit" onclick="carbs()">Get suggested carb intake</button>
+        </form>
+        
+    </div>
+    <br>
+    <br>
+
+
+    <div class="container" id="carbs" style="font-size: 24px;">
+        <!-- return carbs here-->
+    </div>
+
+    <script src="carbs.js"></script>
+    
+
+
+
+
     <br>
     <div class="container">
         <p>Radom Kanye quote:</p>

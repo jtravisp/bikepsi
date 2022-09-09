@@ -23,27 +23,59 @@ function psi() {
         if (tubeless == "true") {
             psi -= 10;
         }
-    }
-    // TO-DO
-    else if (tirewidth == 25) {
-        psi = baseline - 15;
+    } else if (tirewidth == 25) {
+        if (totalweight < 180) {
+            psi = baseline - 20;
+        } else if (totalweight > 200) {
+            psi = baseline - 10;
+        } else {
+            psi = baseline - 15;
+        }
+        if (tubeless == "true") {
+            psi -= 10;
+        }
     } else if (tirewidth == 28) {
-        psi = baseline - 30;
+        if (totalweight < 180) {
+            psi = baseline - 35;
+        } else if (totalweight > 200) {
+            psi = baseline - 25;
+        } else {
+            psi = baseline - 30;
+        }
+        if (tubeless == "true") {
+            psi -= 10;
+        }
     } else if (tirewidth == 30) {
-        psi = baseline - 35;
+        if (totalweight < 180) {
+            psi = baseline - 40;
+        } else if (totalweight > 200) {
+            psi = baseline - 30;
+        } else {
+            psi = baseline - 35;
+        }
+        if (tubeless == "true") {
+            psi -= 10;
+        }
     } else if (tirewidth == 32) {
-        psi = baseline - 35;
+        if (totalweight < 180) {
+            psi = baseline - 43;
+        } else if (totalweight > 200) {
+            psi = baseline - 33;
+        } else {
+            psi = baseline - 38;
+        }
+        if (tubeless == "true") {
+            psi -= 10;
+        }
     }
 
-    var message = "Your recommened tire PSI is " + psi;
+    var message = "Your recommended tire PSI is " + psi;
     document.getElementById("psi").innerHTML = message;
 
     
 }
 
-    // document.querySelector("#psi").innerHTML = "HELLO";
 
-    // psiDiv.innerHTML += `<p> ${psi} </p>`
 
 
 
