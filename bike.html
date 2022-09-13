@@ -30,66 +30,69 @@
 
     <br>
     <div class="container">
-        <h1>Bike Tire PSI Calculator</h1>
-        <h5>*Only for 700cc road bike tires</h5> <br>
+        <div class="row">            
+            <div class="col-12 col-lg-6">
 
-        <form id="psi-form">
-            <h3>Input rider weight:</h3>
-                <input name="riderweight" id="riderweight" type="number" min="80" max="300" default="150" placeholder="Rider lbs">
-            <br>
+                <h1>Bike Tire PSI Calculator</h1>
+                <h5>*Only for 700cc road bike tires</h5> <br>
 
-            <h3>Input bike weight:</h3>
-                <input name="bikeweight" id="bikeweight" type="number" min="0" max="50" default="15" placeholder="Bike lbs">
-            <br>
+                <form id="psi-form">
+                    <h3>Input rider weight:</h3>
+                        <input name="riderweight" id="riderweight" type="number" min="80" max="300" default="150" placeholder="Rider lbs">
+                    <br>
 
-            <h3>Tire width in cc?</h3>
-                <select id="tirewidth">
-                    <option id="23" type="number">23</option>
-                    <option id="25" type="number">25</option>
-                    <option id="28" type="number">28</option>
-                    <option id="30" type="number">30</option>
-                    <option id="32" type="number">32</option>
-                </select>
-            <br>
+                    <h3>Input bike weight:</h3>
+                        <input name="bikeweight" id="bikeweight" type="number" min="0" max="50" default="15" placeholder="Bike lbs">
+                    <br>
 
-            <h3>Using tubeless tires?</h3>
-                <select id="tubeless">
-                    <option id="yes" value="true" selected="selected">Yes</option>
-                    <option id="no" value="false">No</option>
-                </select>
-            <br>
-            <br>
+                    <h3>Tire width in cc?</h3>
+                        <select id="tirewidth">
+                            <option id="23" type="number">23</option>
+                            <option id="25" type="number">25</option>
+                            <option id="28" type="number">28</option>
+                            <option id="30" type="number">30</option>
+                            <option id="32" type="number">32</option>
+                        </select>
+                    <br>
 
-            <button type="button" id="submit" onclick="psi()">Get suggested PSI</button>
-        </form>
+                    <h3>Using tubeless tires?</h3>
+                        <select id="tubeless">
+                            <option id="yes" value="true" selected="selected">Yes</option>
+                            <option id="no" value="false">No</option>
+                        </select>
+                    <br>
+                    <br>
+
+                    <button type="button" class="btn btn-primary" id="submit" onclick="psi()">Get suggested PSI</button>
+                </form>
+            
+                <div class="container" id="psi" style="font-size: 36px; font-style: italic;">
+                    <!-- return PSI here-->
+                </div>
+                <script src="psi.js"></script>
+
+            </div>
         
-    </div>
-    <br>
+            <div class="col-12 col-lg-6">
 
-    <div class="container" id="psi" style="font-size: 36px; font-style: italic;">
-        <!-- return PSI here-->
-    </div>
+                <h1>Bike Ride Nutrition Calculator</h1>
+                <h5>Carbohydrates are the body’s primary energy source when cycling. If you don't plan your carb intake during longer rides, prepare to "bonk" before you get back home!</h5> <br>
 
-    <script src="psi.js"></script>
+                <form id="psi-form">
+                    <h3>Cyclist weight:</h3>
+                        <input name="weight" id="weight" type="number" min="80" max="300" default="150" placeholder="Rider lbs">
+                    <br>
+                    <br>
+
+                    <button type="button" class="btn btn-primary" id="submit" onclick="carbs()">Get suggested carb intake</button>
+                </form>
+            
+            </div>
+        </div>
+
+    </div>
     
-    <br>
-    <br>
 
-
-    <div class="container">
-        <h1>Bike Ride Nutrition Calculator</h1>
-        <h5>Carbohydrates are the body’s primary energy source when cycling. If you don't plan your carb intake during longer rides, prepare to "bonk" before you get back home!</h5> <br>
-
-        <form id="psi-form">
-            <h3>Cyclist weight:</h3>
-                <input name="weight" id="weight" type="number" min="80" max="300" default="150" placeholder="Rider lbs">
-            <br>
-            <br>
-
-            <button type="button" id="submit" onclick="carbs()">Get suggested carb intake</button>
-        </form>
-        
-    </div>
     <br>
     <br>
 
