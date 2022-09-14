@@ -1,7 +1,7 @@
 # CS50 Final Project
 ## Austin Bike Ride Planner
 
-#### Video Demo:
+#### Video Demo: https://youtu.be/UJE7-VTVdXE
 
 #### Description:
 This is a web page to help you plan your next bike ride in Austin! Check the weather, suggested bike tire pressure, nutrition recommendations, and more.
